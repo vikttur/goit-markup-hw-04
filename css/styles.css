@@ -1,17 +1,26 @@
 :root {
 	--color-accent: #2196f3;
-	--color-btn-active: #188CE8;
+	--color-btn-active: #188ce8;
+	--color-main: #757575;
+	--color-header: #212121;
 	--color-logo: #000000;
 	--color-bgr-head: #ffffff;
 	--color-bgr-main: #f5f5f5;
 	--color-bgr-alternative: #f5f4fa;
-	--color-bgr-hero: #2f303a;
-	--color-main: #757575;
-	--color-header: #212121;
-	--color-border-section: #ECECEC;
-	--color-border-card: #EEEEEE;
+	--color-bgr-hero: #c4c4c4;
+	--color-bgr-footer: #2f303a;
+	--color-border-section: #ececec;
+	--color-border-card: #eeeeee;
+	--color-border-client: #afb1b8;
 	--color-footer-contact: rgba(255, 255, 255, 0.6);
 }
+
+/*background: url(new_photo);
+
+#2F303A 40%
+background: rgba(47, 48, 58, 0.4);
+
+background: #C4C4C4;*/
 
 body {
 	background-color: var(--color-bgr-head);
@@ -125,7 +134,8 @@ body .link:focus {
 
 .idea-flex,
 .work-flex,
-.team-flex {
+.team-flex,
+.client-flex {
 	display: flex;
 }
 
@@ -135,7 +145,8 @@ body .link:focus {
 
 .idea-flex>.item:not(:last-child),
 .work-flex>.item:not(:last-child),
-.team-flex>.item:not(:last-child) {
+.team-flex>.item:not(:last-child),
+.client-flex>.item:not(:last-child) {
 	margin-right: 30px;
 }
 
@@ -275,9 +286,9 @@ body .link:focus {
 }
 
 .card-text-employe {
-	width: inherit;
+	/* width: inherit; */
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 16px;
 	text-align: center;
 }
 
@@ -296,10 +307,23 @@ body .link:focus {
 	line-height: 1.19;
 }
 
+.team-contact {
+	padding: 0 32px;
+	margin-bottom: 30px;
+}
+
+/* client */
+.client-flex .item {
+	box-sizing: border-box;
+	border: 1px solid var(--color-border-client);
+	border-radius: 4px;
+}
+
+
 /* footer */
 .footer {
 	padding: 60px 0;
-	background-color: var(--color-bgr-hero);
+	background-color: var(--color-bgr-footer);
 }
 
 .footer .logo {
@@ -317,6 +341,13 @@ body .link:focus {
 
 .footer-contact {
 	color: var(--color-footer-contact);
+}
+
+.appeal-head {
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--color-bgr-head);
 }
 
 /* portfolio */
