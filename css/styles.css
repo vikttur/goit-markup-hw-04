@@ -367,16 +367,21 @@ body .link:focus {
 	align-items: center;
 }
 
-.soc-icon {
-	fill: var(--color-icon);
+.team-link {
+	color: var(--color-icon);
 }
 
-.soc-link:hover,
-.soc-link:focus {
+.soc-icon {
+	fill: currentColor;
+}
+
+.team-link:hover,
+.team-link:focus {
 	background-color: var(--color-accent);
 }
 
-.soc-link:hover .soc-icon {
+.team-link:hover .soc-icon,
+.team-link:focus .soc-icon {
 	fill: var(--color-bgr-head);
 }
 
@@ -406,10 +411,12 @@ body .link:focus {
 	height: 100%;
 	justify-content: center;
 	align-items: center;
+
+	color: var(--color-icon);
 }
 
 .client-icon {
-	fill: var(--color-icon);
+	fill: currentColor;
 }
 
 .client-link:hover,
@@ -417,7 +424,8 @@ body .link:focus {
 	background-color: var(--color-accent);
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
 	fill: var(--color-bgr-head);
 }
 
@@ -476,11 +484,22 @@ body .link:focus {
 	margin: 0;
 }
 
-.color-soc-link {
+.footer-soc-link {
 	background-color: var(--color-bgr-icon);
+	color: var(--color-bgr-head);
 }
 
 .footer-soc-icon {
+	fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+	background-color: var(--color-accent);
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
 	fill: var(--color-bgr-head);
 }
 
